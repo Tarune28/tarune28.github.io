@@ -176,16 +176,16 @@ export const RESUME_DATA = {
       },
       production: true,
     },
-    {
-      title: "ProjX Careers",
-      techStack: ["Firebase", "ExpressJS", "ReactJS", "NodeJS", "Ant-Design"],
-      description: "Kickstarting careers through tailored project recommendations",
-      link: {
-        label: "projx-hbp.web.app",
-        href: "https://projx-hbp.web.app/",
-      },
-      production: false,
-    },
+    // {
+    //   title: "ProjX Careers",
+    //   techStack: ["Firebase", "ExpressJS", "ReactJS", "NodeJS", "Ant-Design"],
+    //   description: "Kickstarting careers through tailored project recommendations",
+    //   link: {
+    //     label: "projx-hbp.web.app",
+    //     href: "https://projx-hbp.web.app/",
+    //   },
+    //   production: false,
+    // },
     {
       title: "WPI Roadmap",
       techStack: ["Firebase", "ExpressJS", "ReactJS", "NodeJS", "Ant-Design"],
