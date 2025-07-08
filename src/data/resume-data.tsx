@@ -30,7 +30,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Massachusetts",
   about: "CS + Applied Math at WashU",
   summary:
-    "Hi, I’m Tarun, a current student at the Washington University in St. Louis, primarily interested in computer science and applied  math. So far, I’ve explored the real-world applications of these fields through projects, research, and internships. For more details, check out my resume located in the header. In my free time, I often write creative pieces.",
+    "Hi, I’m Tarun, a current student at the Washington University in St. Louis, primarily interested in computer science and applied  math. I'm specialized in development technologies (fullstack, ai, devops) and looking to continue gaining more experience.",
   tutoringSummary: "Hi, I’m Tarun, a current student at Washington University in St. Louis. Throughout my time there, I’ve enjoyed math and computer science, and now I hope to help high school students achieve their full potential in these areas. With a strong background in mathematics, computer science, and engineering, my services range from AP to college-level classes. A more detailed overview of my services can be found below. ",
   tutoringServices: [
     "Algebra",
@@ -42,7 +42,7 @@ export const RESUME_DATA = {
     "AP CSA",
     "Discrete Math"
   ],
-  tutoringContact: "If you’re interested in learning more, feel free to contact me at e.tarun@wustl.edu. We will pencil in one free trial session and progress from there. If you require help in a subject related to either math or computer science that’s not listed above, feel free to reach out--I'd be happy to let you know if I can help!",
+  tutoringContact: "If you’re interested in learning more, feel free to contact me at e.tarun@wustl.edu. We will start with one free trial session and progress from there. If you require help in a subject related to either math or computer science that is not listed above, feel free to reach out--I'd be happy to let you know if I can help.",
   avatarUrl: "/headshot.jpeg",
   tutoringAvatar: "/headshot.jpeg",
   personalWebsiteUrl: "https://www.taruneswar.com/headshot.jpeg",
@@ -77,20 +77,20 @@ export const RESUME_DATA = {
       school: "Washington University in St. Louis",
       image: washu,
       degree: "Bachelor's Degree in Computer Science + Applied Math",
-      coursework: "Calculus III, Discrete Math, Introduction to Hardware Engineering, Data Structures and Algorithms",
+      coursework: "Calculus III, Linear Algebra, Discrete Mathematics, Hardware Engineering, Data Structures and Algorithms, Object-Oriented Software Development Laboratory",
       gpa: "4.0",
-      start: "2024",
-      end: "(2027)",
+      // start: "2024",
+      end: "2027",
     },
-    {
-      school: "Worcester Polytechnic Institute",
-      image: mams,
-      degree: "Computer Science",
-      coursework: "Object-Oriented Design, Systems Design, Calculus I-III, Applied Statistics",
-      gpa: "4.0",
-      start: "2023",
-      end: "2024",
-    },
+    // {
+    //   school: "Worcester Polytechnic Institute",
+    //   image: mams,
+    //   degree: "Computer Science",
+    //   coursework: "Object-Oriented Design, Systems Design, Calculus I-III, Applied Statistics",
+    //   gpa: "4.0",
+    //   start: "2023",
+    //   end: "2024",
+    // },
   ],
   additional: [
      {
@@ -102,29 +102,37 @@ export const RESUME_DATA = {
       end: "Present",
       description: "Trained and worked at the Shrewsbury location as a cashier aimed at improving the customer experience. Served as a janitor, re-stocker for freight, and more in addition to cashiering."
     },
-    {
-      company: "365toJapan",
-      link: "https://365tojapan.com/",
-      badges: ["Self-Employed"],
-      title: "Founder, Author, Developer",
-      start: "Sep 2019",
-      end: "Jun 2024",
-      description:
-        "Created weekly Japanese blogs (cultural, learning, research); worked with Northeastern lecturer Brett Murphy Hunt as an editor; reached 4000+ global reads and created a successful community haiku contest; developed the platform from scratch with a MERN stack.",
-    },
+    // {
+    //   company: "365toJapan",
+    //   link: "https://365tojapan.com/",
+    //   badges: ["Self-Employed"],
+    //   title: "Founder, Author, Developer",
+    //   start: "Sep 2019",
+    //   end: "Jun 2024",
+    //   description:
+    //     "Created weekly Japanese blogs (cultural, learning, research); worked with Northeastern lecturer Brett Murphy Hunt as an editor; reached 4000+ global reads and created a successful community haiku contest; developed the platform from scratch with a MERN stack.",
+    // },
     
   ],
   work: [
     {
-      company: "Rakuten",
+      company: "Fresenius Medical Care",
+      link: "https://freseniusmedicalcare.com/en-us/",
+      badges: ["Lexington, MA"],
+      title: "Software Engineering Intern",
+      start: "Jun 2025",
+      end: "Aug 2025",
+      description:
+        "Leveraged the CrowdStrike API (python) to automate monthly KPI metrics by working with the Global Head of Cybersecurity which led to an improvement in operational efficiency by 70% for data leaders / owners. Contributed to spring boot data server by developing unit tests and developing endpoints for Kafka / MongoDB. Spearheaded ServiceNow MCP server integration with internal tools to optimize time spent on tickets by 43%."
+    },
+    {
+      company: "Rakuten 6th Sense",
       link: "https://sixthsense.rakuten.com/platform/cognitive-ai",
       badges: ["Remote"],
-      title: "Software Engineering Learning Intern",
+      title: "Software Engineering Intern",
       start: "Jun 2023",
       end: "Aug 2023",
       description:
-        // "Leveraged LLMs in building out new capabilities for GenerativeAI in both the front and back-end; focused on the Cognitive Engine front-end with typescript, redux, and tailwind.",
-
         "Co-developed a QA chatbot (LLMs) to answer company legal questions (95% coverage) with Tiger Team andused quantization methods to optimize Llama2 and Vicuna and store embeddings in a ChromaDB vector. Achieved accurate results with response of ~2.5 seconds (12GB GPU tunneling) and created Django QA model API (Express) with dashboard (React) and JWT / Rakuten legal recommendations to protect documents. Contributed KPI UI feature components for a production B2B product (Cognitive AIOps) on a three-stage testing workflow with proprietary component libraries. Worked with Redux, Typescript, and Vue framework."
     },
     {
@@ -141,7 +149,7 @@ export const RESUME_DATA = {
       company: "Rakuten SixthSense",
       link: "https://sixthsense.rakuten.com/platform/cognitive-ai",
       badges: ["Remote"],
-      title: "Software Engineering Learning Intern",
+      title: "Software Engineering Intern",
       start: "Jun 2022",
       end: "Aug 2022",
       description:
@@ -152,20 +160,52 @@ export const RESUME_DATA = {
 
   ],
   skills: [
-    "ReactJS",
-    "NodeJS",
-    "LaTeX",
+    "Python",
     "Java",
     "C/C++",
-    "HTML/CSS",
-    "Linux/Apache/etc.",
+    "PHP",
+    "JavaScript/TypeScript",
+    "Dart",
+    "React.js",
+    "Next.js",
+    "Vue.js",
+    "Node.js",
+    "React Native",
+    "Flutter",
+    "Spring Boot",
+    "Llama Stack",
+    "Socket.io",
+    "Redux",
+    "NumPy",
+    "TensorFlow",
+    "Scikit-learn",
+    "Tailwind CSS / ShadCN",
     "MySQL",
-    "Firebase Technologies",
     "MongoDB",
-    "ElasticDB",
-    "Tensorflow"
+    "Supabase",
+    "Firebase Firestore"
   ],
   projects: [
+    {
+      title: "BEM Consulting",
+      techStack: ["Supabase", "ExpressJS", "ReactJS", "NodeJS", "ShadCN", "Socket.io", "+more"],
+      description: "Management platform for BEM Services to automate operations",
+      link: {
+        label: "bem-con.web.app",
+        href: "https://bem-con.web.app/",
+      },
+      production: true,
+    },
+    {
+      title: "InternX Careers",
+      techStack: ["Firebase", "ExpressJS", "ReactJS", "NodeJS", "Ant-Design"],
+      description: "Kickstarting careers through ai-driven application recommendations",
+      link: {
+        label: "projx-hbp.web.app",
+        href: "https://projx-hbp.web.app/",
+      },
+      production: false,
+    },
     {
       title: "MAMS SISO",
       techStack: ["ReactJS", "NodeJS", "ExpressJS", "MySQL", "Raspberry Pi", "Firebase", "+ more"],
@@ -176,16 +216,6 @@ export const RESUME_DATA = {
       },
       production: true,
     },
-    // {
-    //   title: "ProjX Careers",
-    //   techStack: ["Firebase", "ExpressJS", "ReactJS", "NodeJS", "Ant-Design"],
-    //   description: "Kickstarting careers through tailored project recommendations",
-    //   link: {
-    //     label: "projx-hbp.web.app",
-    //     href: "https://projx-hbp.web.app/",
-    //   },
-    //   production: false,
-    // },
     {
       title: "WPI Roadmap",
       techStack: ["Firebase", "ExpressJS", "ReactJS", "NodeJS", "Ant-Design"],
@@ -248,7 +278,15 @@ export const RESUME_DATA = {
   ],
   honors: [
     {
-      title: "WPI GoatHacks Competition",
+      title: "WashU Meta x 8VC Hackathon Winner",
+      description: "Worked with a team of 4 to create intern-x, which helps interns find and apply for job opportunities using ai-driven technology.",
+      link: {
+        label: "WashU Hackathon",
+        href: "https://skandalaris.wustl.edu/event/2025/03/19/llama-stack-challenge-washu-hackathon/",
+      },
+    },
+    {
+      title: "WPI GoatHacks Competition Winner",
       description: "Collaborated with a team of 4 and won the 2024 WPI GoatHacks Hackathon. Created the WPI Roadmap app to help students plan their academic success at WPI.",
       link: {
         label: "WPI Hackathon",
@@ -263,15 +301,15 @@ export const RESUME_DATA = {
         href: "https://www.artandwriting.org/gallery/640423",
       },
     },
-    {
-      title: "Top 60 Japan News & Blogs for 2023",
-      // awards: ["USA Finalist (Top 6%)"],
-      description: "Awarded for the 365toJapan blog as a top 60 blog for Japan news and culture which was based on activity metrics, community engagement, and content quality.",
-      link: {
-        label: "ranking",
-        href: "https://blog.feedspot.com/japan_blogs/",
-      },
-    },
+    // {
+    //   title: "Top 60 Japan News & Blogs for 2023",
+    //   // awards: ["USA Finalist (Top 6%)"],
+    //   description: "Awarded for the 365toJapan blog as a top 60 blog for Japan news and culture which was based on activity metrics, community engagement, and content quality.",
+    //   link: {
+    //     label: "ranking",
+    //     href: "https://blog.feedspot.com/japan_blogs/",
+    //   },
+    // },
   ],
   certificates: [
     {

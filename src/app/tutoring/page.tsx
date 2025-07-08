@@ -14,7 +14,7 @@ import { TutorCard } from "@/components/tutor-card";
 
 export const metadata: Metadata = {
   title: `Tarun Eswar`,
-  description: "Hi, I’m Tarun, a current student at Washington University in St. Louis. Throughout my time there, I’ve enjoyed math and computer science, and now I hope to help high school students achieve their full potential in these areas. With a strong background in mathematics, computer science, and engineering, my services range from AP to college-level classes. A more detailed overview of my services can be found below.",
+  description: "Hi, I’m Tarun, a current student at Washington University in St. Louis. Throughout my time in the classroom, I’ve enjoyed math and computer science, and now I work with high school students achieve their full potential in these areas. With a strong background in mathematics, computer science, and engineering, my services range from AP to college-level classes. A detailed description of my services can be found below.",
 };
 
 export default function Page() {
@@ -98,7 +98,7 @@ export default function Page() {
                   key="Number of Students"
                   title="Number of Students"
                   description="both current and prior"
-                  number="26"
+                  number="14"
                   text_size="lg"
                 />
             <NumberCard
@@ -110,7 +110,7 @@ export default function Page() {
                 />
             <NumberCard
                   key=""
-                  title="Workshops Hosted"
+                  title="Volunteer Workshops Hosted"
                   description="200+ student sessions"
                   number="4"
                   text_size="lg"
@@ -119,7 +119,7 @@ export default function Page() {
         </Section>
         <Section>
           <h2 className="text-xl font-bold">Subjects</h2>
-          <p className="text-pretty font-mono text-sm text-muted-foreground">For previous students, my help with these subjects typically involved assisting with an existing course or creating a custom, 10 week curriculum.</p>
+          <p className="text-pretty font-mono text-sm text-muted-foreground">My work with students in these subjects involves providing support with existing coursework or creating a custom, 10-week curriculum.</p>
           <div className="-mx-1 grid grid-cols-1 gap-3 print:grid-cols-4 print:gap-2 md:grid-cols-2 lg:grid-cols-4">
             {RESUME_DATA.tutoringServices.map((service) => (
               <TutorCard

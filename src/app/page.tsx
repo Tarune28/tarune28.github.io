@@ -132,7 +132,7 @@ export default function Page() {
                       {education.school}
                     </h3>
                     <div className="text-sm tabular-nums text-gray-500">
-                      {education.start} - {education.end}
+                      {"Expected YOG"} {education.end}
                     </div>
                   </div>
                 </CardHeader>
@@ -241,7 +241,7 @@ export default function Page() {
         <Section className=" croll-mb-16">
           <h2 className="text-xl font-bold">Projects</h2>
           <p className="inline-flex items-center gap-2 font-mono text-xs text-gray-500">
-            Gear labeled cards are projects involving 2+ years of continuous development.
+            Gear-labels indicate production-grade applications for clients.
           </p>
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
             {RESUME_DATA.projects.map((project) => {
