@@ -27,7 +27,7 @@ export const RESUME_DATA = {
   name: "Tarun Eswar",
   initials: "TE",
   location: "Massachusetts, USA",
-  locationLink: "https://www.google.com/maps/place/Massachusetts",
+  // locationLink: "https://www.google.com/maps/place/Massachusetts",
   about: "CS + Applied Math at WashU",
   summary:
     "Hi, I’m Tarun, a current student at the Washington University in St. Louis, primarily interested in computer science and applied  math. I'm specialized in development technologies (fullstack, ai, devops) and looking to continue gaining more experience.",
@@ -67,10 +67,10 @@ export const RESUME_DATA = {
       }
       
     ],
-    tutoring: {
-      name: "Tarun",
-      url: "/tutoring",
-    },
+    // tutoring: {
+    //   name: "Tarun",
+    //   url: "/tutoring",
+    // },
   },
   education: [
     {
@@ -80,7 +80,7 @@ export const RESUME_DATA = {
       coursework: "Calculus III, Linear Algebra, Discrete Mathematics, Hardware Engineering, Data Structures and Algorithms, Object-Oriented Software Development Laboratory",
       gpa: "4.0",
       // start: "2024",
-      end: "2027",
+      end: "May 2027",
     },
     // {
     //   school: "Worcester Polytechnic Institute",
@@ -116,6 +116,16 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "Stoke Space",
+      link: "https://www.stokespace.com",
+      badges: ["Seattle, WA"],
+      title: "Software Engineering Intern",
+      start: "Jan 2026",
+      end: "present",
+      description:
+        "Developing on Boltline"
+    },
+    {
       company: "Fresenius Medical Care",
       link: "https://freseniusmedicalcare.com/en-us/",
       badges: ["Lexington, MA"],
@@ -145,16 +155,16 @@ export const RESUME_DATA = {
       description:
         "Collaborated with club executives to revamp web app and SEO capabilities for the club (50+ members). Improved page interactions by 10% and created a more accessible layout and UX for all audiences. Managed minor budget provided by the team for various improvement tasks on the web application.",
     },
-    {
-      company: "Rakuten SixthSense",
-      link: "https://sixthsense.rakuten.com/platform/cognitive-ai",
-      badges: ["Remote"],
-      title: "Software Engineering Intern",
-      start: "Jun 2022",
-      end: "Aug 2022",
-      description:
-        "Worked on the front and backend for 6th sense—a monitoring platform produced as a B2B model for other developers to track the performance vitals of their projects; functioned as a full stack developer using vue.js, node.js, and Elastic Cloud to provide better capabilities to local test acceleration and incident management of applications.",
-    },
+    // {
+    //   company: "Rakuten SixthSense",
+    //   link: "https://sixthsense.rakuten.com/platform/cognitive-ai",
+    //   badges: ["Remote"],
+    //   title: "Software Engineering Intern",
+    //   start: "Jun 2022",
+    //   end: "Aug 2022",
+    //   description:
+    //     "Worked on the front and backend for 6th sense—a monitoring platform produced as a B2B model for other developers to track the performance vitals of their projects; functioned as a full stack developer using vue.js, node.js, and Elastic Cloud to provide better capabilities to local test acceleration and incident management of applications.",
+    // },
 
     
 

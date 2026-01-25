@@ -29,7 +29,7 @@ export default function Page() {
             <p className="max-w-md items-center text-pretty font-mono text-sm text-muted-foreground">
               <a
                 className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
-                href={RESUME_DATA.locationLink}
+                // href={RESUME_DATA.locationLink}
                 target="_blank"
               >
                 <GlobeIcon className="size-3" />
@@ -74,7 +74,7 @@ export default function Page() {
                   </a>
                 </Button>
               ))}
-              {RESUME_DATA.contact.tutoring ? (
+              {/* {RESUME_DATA.contact.tutoring ? (
                 <Button
                   key={RESUME_DATA.contact.tutoring.name}
                   className="size-10"
@@ -86,7 +86,7 @@ export default function Page() {
                     <GraduationCap className="size-5" />
                   </a>
                 </Button>
-              ) : null}
+              ) : null} */}
             </div>
             <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
               {RESUME_DATA.contact.email ? (
@@ -132,7 +132,7 @@ export default function Page() {
                       {education.school}
                     </h3>
                     <div className="text-sm tabular-nums text-gray-500">
-                      {"Expected YOG"} {education.end}
+                      {education.end}
                     </div>
                   </div>
                 </CardHeader>
