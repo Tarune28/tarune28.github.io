@@ -57,7 +57,7 @@ export default function Page() {
                   </a>
                 </Button>
               ) : null}
-              {RESUME_DATA.contact.tutoring ? (
+              {/* {RESUME_DATA.contact.tutoring ? (
                 <Button
                   key={RESUME_DATA.contact.tutoring.name}
                   className="size-10"
@@ -69,7 +69,7 @@ export default function Page() {
                     <Undo2Icon className="size-5" />
                   </a>
                 </Button>
-              ) : null}
+              ) : null} */}
             </div>
             <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
               {RESUME_DATA.contact.email ? (
