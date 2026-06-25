@@ -38,12 +38,7 @@ export default function Page() {
             </p>
             <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
               {RESUME_DATA.contact.email ? (
-                <Button
-                  className="size-10"
-                  variant="outline"
-                  size="icon"
-                  asChild
-                >
+                <Button className="size-10" variant="outline" size="icon" asChild>
                   <a href={`mailto:${RESUME_DATA.contact.email}`}>
                     <MailIcon className="size-5" />
                   </a>
@@ -62,13 +57,7 @@ export default function Page() {
                 </Button>
               ) : null} */}
               {RESUME_DATA.contact.social.map((social) => (
-                <Button
-                  key={social.name}
-                  className="size-10"
-                  variant="outline"
-                  size="icon"
-                  asChild
-                >
+                <Button key={social.name} className="size-10" variant="outline" size="icon" asChild>
                   <a href={social.url} target="_blank">
                     <social.icon className="size-5" />
                   </a>
@@ -103,7 +92,7 @@ export default function Page() {
           </div>
 
           <Avatar className="size-40">
-            <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl}/>
+            <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} />
             <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
           </Avatar>
         </div>
@@ -113,40 +102,33 @@ export default function Page() {
             {RESUME_DATA.summary}
           </p>
         </Section>
-        
+
         <Section>
           <h2 className="text-xl font-bold">Education</h2>
           {RESUME_DATA.education.map((education) => {
             return (
               <Card key={education.school} className="">
                 <div className="splitscreen">
-                  
                   <div className="right">
-                <CardHeader>
-                  {/* create image of washu png logo in images folder */}
-                  {/* <img src={education
+                    <CardHeader>
+                      {/* create image of washu png logo in images folder */}
+                      {/* <img src={education
                   .image} alt="WashU Logo" /> */}
-                  
-                  <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="font-semibold leading-none">
-                      {education.school}
-                    </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
-                      {education.end}
-                    </div>
+
+                      <div className="flex items-center justify-between gap-x-2 text-base">
+                        <h3 className="font-semibold leading-none">{education.school}</h3>
+                        <div className="text-sm tabular-nums text-gray-500">{education.end}</div>
+                      </div>
+                    </CardHeader>
+                    <CardContent className="mt-2">{education.degree}</CardContent>
+                    {education.gpa != null ? (
+                      <CardContent className="mt-2 text-xs">GPA: {education.gpa} / 4.0</CardContent>
+                    ) : null}
+                    <CardContent className="mt-2 text-xs">
+                      Relevant coursework: {education.coursework}
+                    </CardContent>
                   </div>
-                </CardHeader>
-                <CardContent className="mt-2">{education.degree}</CardContent>
-                {education.gpa != null ? (
-                  <CardContent className="mt-2 text-xs">
-                    GPA: {education.gpa} / 4.0
-                  </CardContent>
-                ) : null}
-                <CardContent className="mt-2 text-xs">
-                  Relevant coursework: {education.coursework}
-                </CardContent>
-                </div>
-                {/* <div className="left">
+                  {/* <div className="left">
                     <img src={education.image.src} alt="WashU Logo" />
                   </div> */}
                 </div>
@@ -163,17 +145,20 @@ export default function Page() {
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
                     <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                      {"logo" in work && work.logo ? (
+                        <img
+                          src={work.logo}
+                          alt={`${work.company} logo`}
+                          className="size-5 rounded-sm object-contain"
+                        />
+                      ) : null}
                       <a className="hover:underline" href={work.link}>
                         {work.company}
                       </a>
 
                       <span className="inline-flex gap-x-1">
                         {work.badges.map((badge) => (
-                          <Badge
-                            variant="secondary"
-                            className="align-middle text-xs"
-                            key={badge}
-                          >
+                          <Badge variant="secondary" className="align-middle text-xs" key={badge}>
                             {badge}
                           </Badge>
                         ))}
@@ -184,18 +169,13 @@ export default function Page() {
                     </div>
                   </div>
 
-                  <h4 className="font-mono text-sm leading-none">
-                    {work.title}
-                  </h4>
+                  <h4 className="font-mono text-sm leading-none">{work.title}</h4>
                 </CardHeader>
-                <CardContent className="mt-2 text-xs">
-                  {work.description}
-                </CardContent>
+                <CardContent className="mt-2 text-xs">{work.description}</CardContent>
               </Card>
             );
           })}
         </Section>
-
 
         <Section>
           <h2 className="text-xl font-bold">Additional Experience</h2>
@@ -211,11 +191,7 @@ export default function Page() {
 
                       <span className="inline-flex gap-x-1">
                         {work.badges.map((badge) => (
-                          <Badge
-                            variant="secondary"
-                            className="align-middle text-xs"
-                            key={badge}
-                          >
+                          <Badge variant="secondary" className="align-middle text-xs" key={badge}>
                             {badge}
                           </Badge>
                         ))}
@@ -226,13 +202,9 @@ export default function Page() {
                     </div>
                   </div>
 
-                  <h4 className="font-mono text-sm leading-none">
-                    {work.title}
-                  </h4>
+                  <h4 className="font-mono text-sm leading-none">{work.title}</h4>
                 </CardHeader>
-                <CardContent className="mt-2 text-xs">
-                  {work.description}
-                </CardContent>
+                <CardContent className="mt-2 text-xs">{work.description}</CardContent>
               </Card>
             );
           })}
@@ -287,7 +259,6 @@ export default function Page() {
                   title={certificate.title}
                   description={certificate.description}
                   tags={certificate.awardee}
-                  
                   isProject={true}
                 />
               );

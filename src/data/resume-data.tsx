@@ -30,8 +30,9 @@ export const RESUME_DATA = {
   // locationLink: "https://www.google.com/maps/place/Massachusetts",
   about: "CS + Applied Math at WashU",
   summary:
-    "Hi, I’m Tarun, a current student at the Washington University in St. Louis, primarily interested in computer science and applied  math. I'm specialized in development technologies (fullstack, ai, devops) and looking to continue gaining more experience.",
-  tutoringSummary: "Hi, I’m Tarun, a current student at Washington University in St. Louis. Throughout my time there, I’ve enjoyed math and computer science, and now I hope to help high school students achieve their full potential in these areas. With a strong background in mathematics, computer science, and engineering, my services range from AP to college-level classes. A more detailed overview of my services can be found below. ",
+    "Hi, I’m Tarun, a current student at the Washington University in St. Louis, primarily interested in computer science and applied  math. I'm specialized in softare development and specifically looking to gain more experience with backend architectures / distributed systems.",
+  tutoringSummary:
+    "Hi, I’m Tarun, a current student at Washington University in St. Louis. Throughout my time there, I’ve enjoyed math and computer science, and now I hope to help high school students achieve their full potential in these areas. With a strong background in mathematics, computer science, and engineering, my services range from AP to college-level classes. A more detailed overview of my services can be found below. ",
   tutoringServices: [
     "Algebra",
     "Geometry",
@@ -40,11 +41,12 @@ export const RESUME_DATA = {
     "Calculus III",
     "AP Statistics",
     "AP CSA",
-    "Discrete Math"
+    "Discrete Math",
   ],
-  tutoringContact: "If you’re interested in learning more, feel free to contact me at e.tarun@wustl.edu. We will start with one free trial session and progress from there. If you require help in a subject related to either math or computer science that is not listed above, feel free to reach out--I'd be happy to let you know if I can help.",
-  avatarUrl: "/headshot.jpeg",
-  tutoringAvatar: "/headshot.jpeg",
+  tutoringContact:
+    "If you’re interested in learning more, feel free to contact me at e.tarun@wustl.edu. We will start with one free trial session and progress from there. If you require help in a subject related to either math or computer science that is not listed above, feel free to reach out--I'd be happy to let you know if I can help.",
+  avatarUrl: "/headshot-1.jpeg",
+  tutoringAvatar: "/headshot.JPG",
   personalWebsiteUrl: "https://www.taruneswar.com/headshot.jpeg",
   contact: {
     email: "e.tarun@wustl.edu",
@@ -64,8 +66,7 @@ export const RESUME_DATA = {
         name: "Resume",
         url: "/resume.pdf",
         icon: DescriptionIcon,
-      }
-      
+      },
     ],
     // tutoring: {
     //   name: "Tarun",
@@ -77,7 +78,8 @@ export const RESUME_DATA = {
       school: "Washington University in St. Louis",
       image: washu,
       degree: "Bachelor's Degree in Computer Science + Applied Math",
-      coursework: "Calculus III, Linear Algebra, Discrete Mathematics, Hardware Engineering, Data Structures and Algorithms, Object-Oriented Software Development Laboratory",
+      coursework:
+        "Linear Algebra, Discrete Mathematics, Data Structures, Object-Oriented C++ Software Development",
       gpa: "4.0",
       // start: "2024",
       end: "May 2027",
@@ -93,14 +95,15 @@ export const RESUME_DATA = {
     // },
   ],
   additional: [
-     {
+    {
       company: "Staples",
       link: "https://www.staples.com/",
       badges: ["Shrewsbury, MA"],
       title: "Retail Associate",
       start: "Oct 2023",
       end: "Present",
-      description: "Trained and worked at the Shrewsbury location as a cashier aimed at improving the customer experience. Served as a janitor, re-stocker for freight, and more in addition to cashiering."
+      description:
+        "Trained and worked at the Shrewsbury location as a cashier aimed at improving the customer experience. Served as a janitor, re-stocker for freight, and more in addition to cashiering.",
     },
     // {
     //   company: "365toJapan",
@@ -112,48 +115,47 @@ export const RESUME_DATA = {
     //   description:
     //     "Created weekly Japanese blogs (cultural, learning, research); worked with Northeastern lecturer Brett Murphy Hunt as an editor; reached 4000+ global reads and created a successful community haiku contest; developed the platform from scratch with a MERN stack.",
     // },
-    
   ],
   work: [
+    {
+      company: "Rivian",
+      link: "https://rivian.com",
+      badges: ["Irvine, CA"],
+      title: "Software Engineering Intern",
+      logo: "/logos/rivian.png",
+      start: "Mar 2026",
+      end: "present",
+      description: "Platform Architecture on the People Systems Team",
+    },
     {
       company: "Stoke Space",
       link: "https://www.stokespace.com",
       badges: ["Seattle, WA"],
       title: "Software Engineering Intern",
+      logo: "/logos/stoke.png",
       start: "Jan 2026",
       end: "present",
-      description:
-        "Developing on Boltline"
+      description: "Distributed Caching + Query Optimization on Boltline's GraphQL Services",
     },
     {
       company: "Fresenius Medical Care",
       link: "https://freseniusmedicalcare.com/en-us/",
       badges: ["Lexington, MA"],
       title: "Software Engineering Intern",
+      logo: "/logos/fresenius.png",
       start: "Jun 2025",
       end: "Aug 2025",
-      description:
-        "Leveraged the CrowdStrike API (python) to automate monthly KPI metrics by working with the Global Head of Cybersecurity which led to an improvement in operational efficiency by 70% for data leaders / owners. Contributed to spring boot data server by developing unit tests and developing endpoints for Kafka / MongoDB. Spearheaded ServiceNow MCP server integration with internal tools to optimize time spent on tickets by 43%."
+      description: "Kubernetes Deployments + API Automations with Golang CLIs",
     },
     {
       company: "Rakuten 6th Sense",
       link: "https://sixthsense.rakuten.com/platform/cognitive-ai",
       badges: ["Remote"],
       title: "Software Engineering Intern",
+      logo: "/logos/rakuten.png",
       start: "Jun 2023",
       end: "Aug 2023",
-      description:
-        "Co-developed a QA chatbot (LLMs) to answer company legal questions (95% coverage) with Tiger Team andused quantization methods to optimize Llama2 and Vicuna and store embeddings in a ChromaDB vector. Achieved accurate results with response of ~2.5 seconds (12GB GPU tunneling) and created Django QA model API (Express) with dashboard (React) and JWT / Rakuten legal recommendations to protect documents. Contributed KPI UI feature components for a production B2B product (Cognitive AIOps) on a three-stage testing workflow with proprietary component libraries. Worked with Redux, Typescript, and Vue framework."
-    },
-    {
-      company: "Tufts Financial Group",
-      link: "https://www.tuftsfinancialgroup.org/",
-      badges: ["Medford, MA"],
-      title: "Web Developer",
-      start: "Sep 2023",
-      end: "Jan 2023",
-      description:
-        "Collaborated with club executives to revamp web app and SEO capabilities for the club (50+ members). Improved page interactions by 10% and created a more accessible layout and UX for all audiences. Managed minor budget provided by the team for various improvement tasks on the web application.",
+      description: "LLM-Powered QA Chatbot + B2B AIOps UI Features",
     },
     // {
     //   company: "Rakuten SixthSense",
@@ -165,9 +167,6 @@ export const RESUME_DATA = {
     //   description:
     //     "Worked on the front and backend for 6th sense—a monitoring platform produced as a B2B model for other developers to track the performance vitals of their projects; functioned as a full stack developer using vue.js, node.js, and Elastic Cloud to provide better capabilities to local test acceleration and incident management of applications.",
     // },
-
-    
-
   ],
   skills: [
     "Python",
@@ -182,27 +181,42 @@ export const RESUME_DATA = {
     "Node.js",
     "React Native",
     "Flutter",
+    "Django",
+    "FastAPI",
+    "Express.js",
     "Spring Boot",
-    "Llama Stack",
-    "Socket.io",
+    "GraphQL",
+    "REST APIs",
     "Redux",
-    "NumPy",
+    "Socket.io",
     "TensorFlow",
+    "NumPy",
     "Scikit-learn",
+    "Llama Stack",
     "Tailwind CSS / ShadCN",
+    "PostgreSQL",
     "MySQL",
     "MongoDB",
+    "Redis",
     "Supabase",
-    "Firebase Firestore"
+    "Firebase Firestore",
+    "Docker",
+    "Linux",
+    "Bash",
+    "Git",
+    "Datadog",
+    "AWS (EKS / ECR / Aurora / ElastiCache)",
+    "Azure DevOps",
+    "Google Cloud",
   ],
   projects: [
     {
-      title: "BEM Consulting",
+      title: "SimplTutor",
       techStack: ["Supabase", "ExpressJS", "ReactJS", "NodeJS", "ShadCN", "Socket.io", "+more"],
-      description: "Management platform for BEM Services to automate operations",
+      description: "Management platform for tutoring companies to automate operations",
       link: {
         label: "bem-con.web.app",
-        href: "https://bem-con.web.app/",
+        href: "https://simpltutor.com",
       },
       production: true,
     },
@@ -219,7 +233,8 @@ export const RESUME_DATA = {
     {
       title: "MAMS SISO",
       techStack: ["ReactJS", "NodeJS", "ExpressJS", "MySQL", "Raspberry Pi", "Firebase", "+ more"],
-      description: "A production-level [direct access restricted] digital student attendance system",
+      description:
+        "A production-level [direct access restricted] digital student attendance system",
       link: {
         label: "mass-academy-sign-in-system.web.app",
         href: "https://mass-academy-sign-in-system.web.app/",
@@ -289,7 +304,8 @@ export const RESUME_DATA = {
   honors: [
     {
       title: "WashU Meta x 8VC Hackathon Winner",
-      description: "Worked with a team of 4 to create intern-x, which helps interns find and apply for job opportunities using ai-driven technology.",
+      description:
+        "Worked with a team of 4 to create intern-x, which helps interns find and apply for job opportunities using ai-driven technology.",
       link: {
         label: "WashU Hackathon",
         href: "https://skandalaris.wustl.edu/event/2025/03/19/llama-stack-challenge-washu-hackathon/",
@@ -297,7 +313,8 @@ export const RESUME_DATA = {
     },
     {
       title: "WPI GoatHacks Competition Winner",
-      description: "Collaborated with a team of 4 and won the 2024 WPI GoatHacks Hackathon. Created the WPI Roadmap app to help students plan their academic success at WPI.",
+      description:
+        "Collaborated with a team of 4 and won the 2024 WPI GoatHacks Hackathon. Created the WPI Roadmap app to help students plan their academic success at WPI.",
       link: {
         label: "WPI Hackathon",
         href: "https://hack.wpi.edu/index.html",
@@ -305,7 +322,8 @@ export const RESUME_DATA = {
     },
     {
       title: "Scholastic Arts & Writing Awards",
-      description: "Placed in the top 0.05% of poetry entries for poetry. Published piece and recognized as a national gold medalist / NSPP semifinalist nominee. Invited to the 100th Ceremony at Carnegie Hall.",
+      description:
+        "Placed in the top 0.05% of poetry entries for poetry. Published piece and recognized as a national gold medalist / NSPP semifinalist nominee. Invited to the 100th Ceremony at Carnegie Hall.",
       link: {
         label: "award",
         href: "https://www.artandwriting.org/gallery/640423",
@@ -330,8 +348,7 @@ export const RESUME_DATA = {
     {
       title: "The Seal of Biliteracy in Japanese & English",
       awardee: ["The State of Massachusetts"],
-      description:
-        "Awarded for proficiency in Japanese and English",
+      description: "Awarded for proficiency in Japanese and English",
     },
   ],
 } as const;
