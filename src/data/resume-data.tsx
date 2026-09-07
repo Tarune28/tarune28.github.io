@@ -82,7 +82,7 @@ export const RESUME_DATA = {
         "Linear Algebra, Discrete Mathematics, Data Structures, Object-Oriented C++ Software Development",
       gpa: "4.0",
       // start: "2024",
-      end: "May 2027",
+      end: "May 2028",
     },
     // {
     //   school: "Worcester Polytechnic Institute",
