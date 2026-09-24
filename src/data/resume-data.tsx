@@ -28,9 +28,9 @@ export const RESUME_DATA = {
   initials: "TE",
   location: "Massachusetts, USA",
   // locationLink: "https://www.google.com/maps/place/Massachusetts",
-  about: "CS + Applied Math at WashU",
+  about: "CS + Math at WashU",
   summary:
-    "Hi, I’m Tarun, a current student at the Washington University in St. Louis, primarily interested in computer science and applied  math. I'm specialized in softare development and specifically looking to gain more experience with backend architectures / distributed systems.",
+    "Hi, I’m Tarun, a current student at Washington University in St. Louis studying computer science and mathematics. I work primarily on backend architectures and distributed systems, with recent experience in distributed caching, event-driven services, and agent-orchestrated CI pipelines.",
   tutoringSummary:
     "Hi, I’m Tarun, a current student at Washington University in St. Louis. Throughout my time there, I’ve enjoyed math and computer science, and now I hope to help high school students achieve their full potential in these areas. With a strong background in mathematics, computer science, and engineering, my services range from AP to college-level classes. A more detailed overview of my services can be found below. ",
   tutoringServices: [
@@ -46,8 +46,8 @@ export const RESUME_DATA = {
   tutoringContact:
     "If you’re interested in learning more, feel free to contact me at e.tarun@wustl.edu. We will start with one free trial session and progress from there. If you require help in a subject related to either math or computer science that is not listed above, feel free to reach out--I'd be happy to let you know if I can help.",
   avatarUrl: "/headshot-1.jpeg",
-  tutoringAvatar: "/headshot.JPG",
-  personalWebsiteUrl: "https://www.taruneswar.com/headshot.jpeg",
+  tutoringAvatar: "/headshot-1.jpeg",
+  personalWebsiteUrl: "https://www.taruneswar.com",
   contact: {
     email: "e.tarun@wustl.edu",
     // tel: "+19784939450",
@@ -59,7 +59,7 @@ export const RESUME_DATA = {
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/tarun-eswar-b10150233/",
+        url: "https://www.linkedin.com/in/etarun",
         icon: LinkedInIcon,
       },
       {
@@ -77,7 +77,7 @@ export const RESUME_DATA = {
     {
       school: "Washington University in St. Louis",
       image: washu,
-      degree: "Bachelor's Degree in Computer Science + Applied Math",
+      degree: "Bachelor of Science in Computer Science & Mathematics",
       coursework:
         "Data Structures & Algorithms, Analysis of Algorithms, Systems Software, Programming Systems & Languages, Parallel & Concurrent Programming, Cloud Computing & Big Data, Object-Oriented C++ Software Development, Linear Algebra, Discrete Mathematics",
       gpa: "3.94",
@@ -95,6 +95,16 @@ export const RESUME_DATA = {
     // },
   ],
   additional: [
+    {
+      company: "Washington University in St. Louis",
+      link: "https://cse.wustl.edu/",
+      badges: ["St. Louis, MO"],
+      title: "Teaching Assistant",
+      start: "Aug 2025",
+      end: "present",
+      description:
+        "Teaching assistant for CSE 361 (Introduction to Systems Software), CSE 332 (Object-Oriented Software Development Lab), and CSE 132 (Introduction to Computer Engineering).",
+    },
     {
       company: "Staples",
       link: "https://www.staples.com/",
@@ -122,9 +132,10 @@ export const RESUME_DATA = {
       link: "https://rivian.com",
       badges: ["Irvine, CA"],
       title: "Software Engineering Intern",
-      start: "Mar 2026",
-      end: "present",
-      description: "Platform Architecture on the People Systems Team",
+      start: "May 2026",
+      end: "Aug 2026",
+      description:
+        "Agent-Orchestrating CI + Event-Driven Notifications on an Internal Service-Management Platform (React / Fastify / Postgres)",
     },
     {
       company: "Stoke Space",
@@ -132,21 +143,23 @@ export const RESUME_DATA = {
       badges: ["Seattle, WA"],
       title: "Software Engineering Intern",
       start: "Jan 2026",
-      end: "present",
-      description: "Distributed Caching + Query Optimization on Boltline's GraphQL Services",
+      end: "Apr 2026",
+      description:
+        "Distributed Caching (ElastiCache / Redis) + Query Optimization on Boltline's GraphQL Services",
     },
     {
       company: "Fresenius Medical Care",
       link: "https://freseniusmedicalcare.com/en-us/",
       badges: ["Lexington, MA"],
       title: "Software Engineering Intern",
-      start: "Jun 2025",
+      start: "May 2025",
       end: "Aug 2025",
-      description: "Kubernetes Deployments + API Automations with Golang CLIs",
+      description:
+        "CrowdStrike KPI Automations (Flask + Go CLI), LiteLLM on AWS EKS, and a ServiceNow MCP Server",
     },
     {
       company: "Rakuten 6th Sense",
-      link: "https://sixthsense.rakuten.com/platform/cognitive-ai",
+      link: "https://sixthsense.rakuten.com/",
       badges: ["Remote"],
       title: "Software Engineering Intern",
       start: "Jun 2023",
@@ -168,9 +181,11 @@ export const RESUME_DATA = {
     "Python",
     "Java",
     "C/C++",
+    "Go",
     "PHP",
     "JavaScript/TypeScript",
     "Dart",
+    "SQL",
     "React.js",
     "Next.js",
     "Vue.js",
@@ -179,8 +194,10 @@ export const RESUME_DATA = {
     "Flutter",
     "Django",
     "FastAPI",
+    "Flask",
     "Express.js",
     "Spring Boot",
+    "Electron",
     "GraphQL",
     "REST APIs",
     "Redux",
@@ -194,12 +211,18 @@ export const RESUME_DATA = {
     "MySQL",
     "MongoDB",
     "Redis",
+    "ElastiCache",
+    "Prisma",
     "Supabase",
     "Firebase Firestore",
     "Docker",
+    "Kubernetes",
+    "Pulumi (IaC)",
     "Linux",
     "Bash",
     "Git",
+    "Jenkins",
+    "Postman",
     "Datadog",
     "AWS (EKS / ECR / Aurora / ElastiCache)",
     "Azure DevOps",
@@ -208,10 +231,21 @@ export const RESUME_DATA = {
   projects: [
     {
       title: "SimplTutor",
-      techStack: ["Supabase", "ExpressJS", "ReactJS", "NodeJS", "ShadCN", "Socket.io", "+more"],
-      description: "Management platform for tutoring companies to automate operations",
+      techStack: [
+        "Supabase",
+        "ExpressJS",
+        "ReactJS",
+        "Redux",
+        "NodeJS",
+        "Stripe",
+        "ShadCN",
+        "Socket.io",
+        "+more",
+      ],
+      description:
+        "Management platform sold to a tutoring company to automate billing for 15 staff and 150+ students",
       link: {
-        label: "bem-con.web.app",
+        label: "simpltutor.com",
         href: "https://simpltutor.com",
       },
       production: true,
@@ -219,7 +253,8 @@ export const RESUME_DATA = {
     {
       title: "InternX Careers",
       techStack: ["Firebase", "ExpressJS", "ReactJS", "NodeJS", "Ant-Design"],
-      description: "Kickstarting careers through ai-driven application recommendations",
+      description:
+        "Kickstarting careers through ai-driven application recommendations",
       link: {
         label: "projx-hbp.web.app",
         href: "https://projx-hbp.web.app/",
@@ -228,9 +263,17 @@ export const RESUME_DATA = {
     },
     {
       title: "MAMS SISO",
-      techStack: ["ReactJS", "NodeJS", "ExpressJS", "MySQL", "Raspberry Pi", "Firebase", "+ more"],
+      techStack: [
+        "ReactJS",
+        "NodeJS",
+        "ExpressJS",
+        "MySQL",
+        "Raspberry Pi",
+        "Firebase",
+        "+ more",
+      ],
       description:
-        "A production-level [direct access restricted] digital student attendance system",
+        "Digital sign-in/out system used by 100+ students; first student-built app adopted by WPI (access restricted)",
       link: {
         label: "mass-academy-sign-in-system.web.app",
         href: "https://mass-academy-sign-in-system.web.app/",
@@ -240,7 +283,8 @@ export const RESUME_DATA = {
     {
       title: "WPI Roadmap",
       techStack: ["Firebase", "ExpressJS", "ReactJS", "NodeJS", "Ant-Design"],
-      description: "Plan your academic success at WPI (2024 WPI GoatHacks Winner)",
+      description:
+        "Academic advising app, 2024 GoatHacks winner (1st of 50+ teams), used by 50+ students",
       link: {
         label: "roadmap-wpi.web.app",
         href: "https://roadmap-wpi.web.app",
@@ -249,10 +293,10 @@ export const RESUME_DATA = {
     },
     {
       title: "WashU Course Planner",
-      techStack: ["ReactJS", "NodeJS", "ExpressJS", "Primsa", "MUI"],
+      techStack: ["ReactJS", "NodeJS", "ExpressJS", "Prisma", "MUI"],
       description: "Helping students plan their WashU academic journey",
       link: {
-        label: "washu-course-planner.web.app",
+        label: "github.com/dscwashu",
         href: "https://github.com/dscwashu/washu-course-planner",
       },
       production: false,
@@ -279,7 +323,14 @@ export const RESUME_DATA = {
 
     {
       title: "Modeling TRS MRI",
-      techStack: ["Python", "Tensorflow", "ResNet", "OpenCV", "GradCam", "Flask"],
+      techStack: [
+        "Python",
+        "Tensorflow",
+        "ResNet",
+        "OpenCV",
+        "GradCam",
+        "Flask",
+      ],
       description: "A deep learning model to predict OCD from fMRI scans",
       link: {
         label: "arXiv",
@@ -319,7 +370,7 @@ export const RESUME_DATA = {
     {
       title: "Scholastic Arts & Writing Awards",
       description:
-        "Placed in the top 0.05% of poetry entries for poetry. Published piece and recognized as a national gold medalist / NSPP semifinalist nominee. Invited to the 100th Ceremony at Carnegie Hall.",
+        "Placed in the top 0.05% of poetry entries. Published piece and recognized as a national gold medalist / NSPP semifinalist nominee. Invited to the 100th Ceremony at Carnegie Hall.",
       link: {
         label: "award",
         href: "https://www.artandwriting.org/gallery/640423",
@@ -337,9 +388,9 @@ export const RESUME_DATA = {
   ],
   certificates: [
     {
-      title: "Japanse Language Proficiency Test N5",
+      title: "Japanese Language Proficiency Test N5",
       awardee: ["The Japan Foundation"],
-      description: "Intermediate Japanese Language Proficiency",
+      description: "Basic Japanese Language Proficiency",
     },
     {
       title: "The Seal of Biliteracy in Japanese & English",
