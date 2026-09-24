@@ -80,7 +80,7 @@ export const RESUME_DATA = {
       degree: "Bachelor's Degree in Computer Science + Applied Math",
       coursework:
         "Linear Algebra, Discrete Mathematics, Data Structures, Object-Oriented C++ Software Development",
-      gpa: "4.0",
+      gpa: "3.94",
       // start: "2024",
       end: "May 2028",
     },
