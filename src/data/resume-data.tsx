@@ -79,7 +79,7 @@ export const RESUME_DATA = {
       image: washu,
       degree: "Bachelor's Degree in Computer Science + Applied Math",
       coursework:
-        "Linear Algebra, Discrete Mathematics, Data Structures, Object-Oriented C++ Software Development",
+        "Data Structures & Algorithms, Analysis of Algorithms, Systems Software, Programming Systems & Languages, Parallel & Concurrent Programming, Cloud Computing & Big Data, Object-Oriented C++ Software Development, Linear Algebra, Discrete Mathematics",
       gpa: "3.94",
       // start: "2024",
       end: "May 2028",
