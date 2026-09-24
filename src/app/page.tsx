@@ -7,18 +7,68 @@ import { Section } from "@/components/ui/section";
 import { GlobeIcon, GraduationCap, MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
+import { OG_IMAGE, SITE_URL } from "@/lib/site";
 import { ProjectCard } from "@/components/project-card";
 import { AwardCard } from "@/components/award-card";
 import "./globals.css";
 
+const HOME_DESCRIPTION =
+  "Tarun Eswar is a computer science and mathematics student at Washington University in St. Louis and a software engineer with internship experience at Rivian, Stoke Space, and Fresenius Medical Care.";
+
 export const metadata: Metadata = {
-  title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
-  description: RESUME_DATA.summary,
+  title: {
+    absolute: `${RESUME_DATA.name} | Software Engineer & ${RESUME_DATA.about}`,
+  },
+  description: HOME_DESCRIPTION,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "profile",
+    url: SITE_URL,
+    title: `${RESUME_DATA.name} | Software Engineer & ${RESUME_DATA.about}`,
+    description: HOME_DESCRIPTION,
+    images: [OG_IMAGE],
+  },
+  twitter: {
+    card: "summary",
+    title: `${RESUME_DATA.name} | Software Engineer & ${RESUME_DATA.about}`,
+    description: HOME_DESCRIPTION,
+    images: [OG_IMAGE.url],
+  },
+};
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: RESUME_DATA.name,
+  url: SITE_URL,
+  image: `${SITE_URL}${OG_IMAGE.url}`,
+  jobTitle: "Software Engineer",
+  description: HOME_DESCRIPTION,
+  email: `mailto:${RESUME_DATA.contact.email}`,
+  address: {
+    "@type": "PostalAddress",
+    addressRegion: "Massachusetts",
+    addressCountry: "US",
+  },
+  alumniOf: RESUME_DATA.education.map((edu) => ({
+    "@type": "CollegeOrUniversity",
+    name: edu.school,
+  })),
+  knowsAbout: RESUME_DATA.skills,
+  sameAs: RESUME_DATA.contact.social
+    .map((social) => social.url)
+    .filter((url) => url.startsWith("http")),
 };
 
 export default function Page() {
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+      />
       <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-2">
@@ -38,7 +88,12 @@ export default function Page() {
             </p>
             <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
               {RESUME_DATA.contact.email ? (
-                <Button className="size-10" variant="outline" size="icon" asChild>
+                <Button
+                  className="size-10"
+                  variant="outline"
+                  size="icon"
+                  asChild
+                >
                   <a href={`mailto:${RESUME_DATA.contact.email}`}>
                     <MailIcon className="size-5" />
                   </a>
@@ -57,7 +112,13 @@ export default function Page() {
                 </Button>
               ) : null} */}
               {RESUME_DATA.contact.social.map((social) => (
-                <Button key={social.name} className="size-10" variant="outline" size="icon" asChild>
+                <Button
+                  key={social.name}
+                  className="size-10"
+                  variant="outline"
+                  size="icon"
+                  asChild
+                >
                   <a href={social.url} target="_blank">
                     <social.icon className="size-5" />
                   </a>
@@ -116,13 +177,21 @@ export default function Page() {
                   .image} alt="WashU Logo" /> */}
 
                       <div className="flex items-center justify-between gap-x-2 text-base">
-                        <h3 className="font-semibold leading-none">{education.school}</h3>
-                        <div className="text-sm tabular-nums text-gray-500">{education.end}</div>
+                        <h3 className="font-semibold leading-none">
+                          {education.school}
+                        </h3>
+                        <div className="text-sm tabular-nums text-gray-500">
+                          {education.end}
+                        </div>
                       </div>
                     </CardHeader>
-                    <CardContent className="mt-2">{education.degree}</CardContent>
+                    <CardContent className="mt-2">
+                      {education.degree}
+                    </CardContent>
                     {education.gpa != null ? (
-                      <CardContent className="mt-2 text-xs">GPA: {education.gpa} / 4.0</CardContent>
+                      <CardContent className="mt-2 text-xs">
+                        GPA: {education.gpa} / 4.0
+                      </CardContent>
                     ) : null}
                     <CardContent className="mt-2 text-xs">
                       Relevant coursework: {education.coursework}
@@ -151,7 +220,11 @@ export default function Page() {
 
                       <span className="inline-flex gap-x-1">
                         {work.badges.map((badge) => (
-                          <Badge variant="secondary" className="align-middle text-xs" key={badge}>
+                          <Badge
+                            variant="secondary"
+                            className="align-middle text-xs"
+                            key={badge}
+                          >
                             {badge}
                           </Badge>
                         ))}
@@ -162,9 +235,13 @@ export default function Page() {
                     </div>
                   </div>
 
-                  <h4 className="font-mono text-sm leading-none">{work.title}</h4>
+                  <h4 className="font-mono text-sm leading-none">
+                    {work.title}
+                  </h4>
                 </CardHeader>
-                <CardContent className="mt-2 text-xs">{work.description}</CardContent>
+                <CardContent className="mt-2 text-xs">
+                  {work.description}
+                </CardContent>
               </Card>
             );
           })}
@@ -184,7 +261,11 @@ export default function Page() {
 
                       <span className="inline-flex gap-x-1">
                         {work.badges.map((badge) => (
-                          <Badge variant="secondary" className="align-middle text-xs" key={badge}>
+                          <Badge
+                            variant="secondary"
+                            className="align-middle text-xs"
+                            key={badge}
+                          >
                             {badge}
                           </Badge>
                         ))}
@@ -195,9 +276,13 @@ export default function Page() {
                     </div>
                   </div>
 
-                  <h4 className="font-mono text-sm leading-none">{work.title}</h4>
+                  <h4 className="font-mono text-sm leading-none">
+                    {work.title}
+                  </h4>
                 </CardHeader>
-                <CardContent className="mt-2 text-xs">{work.description}</CardContent>
+                <CardContent className="mt-2 text-xs">
+                  {work.description}
+                </CardContent>
               </Card>
             );
           })}
